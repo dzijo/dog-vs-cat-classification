@@ -28,7 +28,7 @@ def predict(image):
     model = load_model('final_model_TL.h5')
     # predict the class
     result = model.predict(img)
-    print(result)
+    print(model.summary())
     return result[0][0].astype(int)
 
 print(predict('56236231_359909444733034_4318681464003624960_n.png'))
